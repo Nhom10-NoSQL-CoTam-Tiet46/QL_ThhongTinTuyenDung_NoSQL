@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "64ecbf001f7d5ef5b90a0476"
+  },
+  "MaNV": "NV001",
+  "TenNV": "Nguyễn Văn A",
+  "Tuoi": 30,
+  "PhongBan": "Phòng công nghệ",
+  "ChucVu": "Kỹ sư phần mềm",
+  "ThongTinLH": {
+    "SoDT": "0123456789",
+    "Email": "nva@gmail.com"
+  }
+},
+{
+  "_id": {
+    "$oid": "64ecbf001f7d5ef5b90a0477"
+  },
+  "MaNV": "NV002",
+  "TenNV": "Trần Thị B",
+  "Tuoi": 28,
+  "PhongBan": "Phòng tài chính",
+  "ChucVu": "Nhân viên kế toán",
+  "ThongTinLH": {
+    "SoDT": "0987654321",
+    "Email": "ttb@gmail.com"
+  }
+}]

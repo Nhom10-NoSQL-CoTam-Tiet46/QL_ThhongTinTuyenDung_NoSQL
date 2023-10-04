@@ -1,0 +1,12 @@
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.deps.json
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.dll
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.pdb
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.AssemblyReference.cache
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfoInputs.cache
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfo.cs
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.CoreCompileInputs.cache
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.dll
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
+D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
