@@ -15,7 +15,7 @@ Cơ sở dữ liệu NoSQL
 
 ## Công nghệ
 + Visual Studio 2022
-+ .Net Winforms
++ .Net Core 6
 + Mongodb Compass
 + MongoDB.Driver
 + MongoDB.BSon
