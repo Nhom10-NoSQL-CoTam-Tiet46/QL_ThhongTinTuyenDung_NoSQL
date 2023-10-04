@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "izXnvU/IihnKJ6Ui4PeKnuQaOFIfXkUCYjrGLWVai8Yr9XpOIXJduJciX2HysGIy5wT+OS7s+US7JINbIsnrSQ==",
+  "dgSpecHash": "Z1R57YJtvg65zCay5Pmsg2i0xWV7OOHM/hEZCL41ni0nAvBoXEYGgOnEdYnF9ZgzjlNq78kHOWEZ4oKEB0zDkQ==",
   "success": true,
-  "projectFilePath": "D:\\Mon hoc\\NoSql\\QL_TuyenDung\\WinForms_Library\\WinForms_Library.csproj",
+  "projectFilePath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zenon\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\zenon\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
