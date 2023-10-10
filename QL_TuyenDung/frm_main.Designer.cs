@@ -36,6 +36,9 @@
             côngTyTuyểnDụngToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -60,28 +63,28 @@
             // nhanvienToolStripMenuItem
             // 
             nhanvienToolStripMenuItem.Name = "nhanvienToolStripMenuItem";
-            nhanvienToolStripMenuItem.Size = new Size(224, 26);
+            nhanvienToolStripMenuItem.Size = new Size(221, 26);
             nhanvienToolStripMenuItem.Text = "Nhân viên";
             nhanvienToolStripMenuItem.Click += nhanvienToolStripMenuItem_Click;
             // 
             // việcCầnTuyểnToolStripMenuItem
             // 
             việcCầnTuyểnToolStripMenuItem.Name = "việcCầnTuyểnToolStripMenuItem";
-            việcCầnTuyểnToolStripMenuItem.Size = new Size(224, 26);
+            việcCầnTuyểnToolStripMenuItem.Size = new Size(221, 26);
             việcCầnTuyểnToolStripMenuItem.Text = "Việc cần tuyển";
             việcCầnTuyểnToolStripMenuItem.Click += việcCầnTuyểnToolStripMenuItem_Click;
             // 
             // ứngViênToolStripMenuItem
             // 
             ứngViênToolStripMenuItem.Name = "ứngViênToolStripMenuItem";
-            ứngViênToolStripMenuItem.Size = new Size(224, 26);
+            ứngViênToolStripMenuItem.Size = new Size(221, 26);
             ứngViênToolStripMenuItem.Text = "Ứng viên";
             ứngViênToolStripMenuItem.Click += ứngViênToolStripMenuItem_Click;
             // 
             // côngTyTuyểnDụngToolStripMenuItem
             // 
             côngTyTuyểnDụngToolStripMenuItem.Name = "côngTyTuyểnDụngToolStripMenuItem";
-            côngTyTuyểnDụngToolStripMenuItem.Size = new Size(224, 26);
+            côngTyTuyểnDụngToolStripMenuItem.Size = new Size(221, 26);
             côngTyTuyểnDụngToolStripMenuItem.Text = "Công ty tuyển dụng";
             côngTyTuyểnDụngToolStripMenuItem.Click += côngTyTuyểnDụngToolStripMenuItem_Click;
             // 
@@ -101,11 +104,44 @@
             toolStripStatusLabel1.Size = new Size(69, 20);
             toolStripStatusLabel1.Text = "Xin chào:";
             // 
+            // button1
+            // 
+            button1.Location = new Point(73, 72);
+            button1.Name = "button1";
+            button1.Size = new Size(220, 61);
+            button1.TabIndex = 3;
+            button1.Text = "Cong Ty Tuyen";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(352, 72);
+            button2.Name = "button2";
+            button2.Size = new Size(220, 61);
+            button2.TabIndex = 4;
+            button2.Text = "Nhan Vien";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(624, 72);
+            button3.Name = "button3";
+            button3.Size = new Size(175, 61);
+            button3.TabIndex = 5;
+            button3.Text = "Ung Vien";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // frm_main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1782, 743);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -128,5 +164,8 @@
         private ToolStripMenuItem côngTyTuyểnDụngToolStripMenuItem;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }

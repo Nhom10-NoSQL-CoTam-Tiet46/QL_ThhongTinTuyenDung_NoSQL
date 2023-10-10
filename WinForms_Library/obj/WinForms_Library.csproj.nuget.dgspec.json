@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj": {}
+    "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj": {}
   },
   "projects": {
-    "C:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj": {
+    "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
+        "projectUniqueName": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj",
         "projectName": "WinForms_Library",
-        "projectPath": "C:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\obj\\",
+        "projectPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj",
+        "packagesPath": "C:\\Users\\zenon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zenon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -38,17 +39,44 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "MongoDB.Driver.Core": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "mongocsharpdriver": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

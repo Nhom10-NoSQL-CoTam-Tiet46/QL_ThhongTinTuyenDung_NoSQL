@@ -84,7 +84,7 @@
             // dgv_ungvien
             // 
             dgv_ungvien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ungvien.Location = new Point(2, 2);
+            dgv_ungvien.Location = new Point(28, 22);
             dgv_ungvien.Name = "dgv_ungvien";
             dgv_ungvien.RowHeadersWidth = 51;
             dgv_ungvien.RowTemplate.Height = 29;
@@ -543,6 +543,7 @@
             Controls.Add(dgv_ungvien);
             Name = "frm_ungvien";
             Text = "frm_ungvien";
+            Load += frm_ungvien_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_ungvien).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

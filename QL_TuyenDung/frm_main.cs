@@ -15,7 +15,6 @@ namespace QL_TuyenDung
         public frm_main()
         {
             InitializeComponent();
-            this.IsMdiContainer = true;
             this.StartPosition = FormStartPosition.CenterScreen; // Đặt vị trí bắt đầu ở giữa màn hình
 
         }
@@ -24,7 +23,6 @@ namespace QL_TuyenDung
         {
             InitializeComponent();
             toolStripStatusLabel1.Text = "Xin chào: " + name;
-            this.IsMdiContainer = true;
             this.StartPosition = FormStartPosition.CenterScreen; // Đặt vị trí bắt đầu ở giữa màn hình
 
 
@@ -33,7 +31,6 @@ namespace QL_TuyenDung
         private void ứngViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_ungvien frm = new frm_ungvien();
-            frm.MdiParent = this;
 
             // Lấy kích thước của frm_cha
             int chaWidth = this.Width;
@@ -50,8 +47,7 @@ namespace QL_TuyenDung
 
         private void nhanvienToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_nhanvien frm = new frm_nhanvien();
-            frm.MdiParent = this;
+            frm_nhanvienn1 frm = new frm_nhanvienn1();
 
             // Lấy kích thước của frm_cha
             int chaWidth = this.Width;
@@ -69,7 +65,6 @@ namespace QL_TuyenDung
         private void việcCầnTuyểnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_vieccantuyen frm = new frm_vieccantuyen();
-            frm.MdiParent = this;
 
             // Lấy kích thước của frm_cha
             int chaWidth = this.Width;
@@ -87,7 +82,6 @@ namespace QL_TuyenDung
         private void côngTyTuyểnDụngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_congtytuyen frm = new frm_congtytuyen();
-            frm.MdiParent = this;
 
             // Lấy kích thước của frm_cha
             int chaWidth = this.Width;
@@ -100,6 +94,24 @@ namespace QL_TuyenDung
             frm.StartPosition = FormStartPosition.CenterParent;
 
             frm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_congtytuyen frm = new frm_congtytuyen();
+            frm.ShowDialog(this);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_nhanvienn1 frm = new frm_nhanvienn1();
+            frm.ShowDialog(this);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           frm_ungvien frm = new frm_ungvien();
+            frm.ShowDialog(this);
         }
     }
 }

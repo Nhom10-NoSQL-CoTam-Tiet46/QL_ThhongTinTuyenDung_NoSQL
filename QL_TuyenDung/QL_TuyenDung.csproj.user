@@ -10,7 +10,7 @@
     <Compile Update="frm_main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm_nhanvien.cs">
+    <Compile Update="frm_nhanvienn1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm_ungvien.cs">

@@ -33,7 +33,7 @@ namespace QL_TuyenDung
 
             // Gọi hàm LoadData và lưu trữ dữ liệu vào biến dataTable
             Xuly_NoSQL xulyNoSQL = new Xuly_NoSQL();
-            dataTable = xulyNoSQL.LoadData(colectionName); // Thay "TenCollection" bằng tên của bảng MongoDB của bạn
+            dataTable = xulyNoSQL.LoadData("ungvien"); // Thay "TenCollection" bằng tên của bảng MongoDB của bạn
 
             // Đặt DataSource của DataGridView
             dgv_ungvien.DataSource = dataTable;
@@ -116,17 +116,6 @@ namespace QL_TuyenDung
 
             return document;
         }
-
-
-
-
-
-
-
-
-
-
-
         public void dgv_ungvien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -192,7 +181,6 @@ namespace QL_TuyenDung
 
         private void btn_dat_Click(object sender, EventArgs e)
         {
-
             try
             {
                 string trangThaiUngTuyenUV = "Đạt";
@@ -216,6 +204,7 @@ namespace QL_TuyenDung
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
                 docdulieu(tenColection);
+
             }
             catch
             {
@@ -354,14 +343,20 @@ namespace QL_TuyenDung
         {
             try
             {
-               
+
                 xuly.XoaDocumentTrongCollection(tenColection, txt_idUV.Text);
                 docdulieu(tenColection);
+                txt_idUV.Clear();
             }
             catch
             {
                 MessageBox.Show("Bạn chưa chọn ứng viên để xóa");
             }
+        }
+
+        private void frm_ungvien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

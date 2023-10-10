@@ -10,3 +10,51 @@ D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms
 D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
 D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
 D:\Mon hoc\NoSql\QL_TuyenDung\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.deps.json
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.dll
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.pdb
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.AssemblyReference.cache
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfoInputs.cache
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfo.cs
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.CoreCompileInputs.cache
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.dll
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
+C:\Users\chaun\OneDrive\Máy tính\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.deps.json
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.dll
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.pdb
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.AssemblyReference.cache
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfoInputs.cache
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfo.cs
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.CoreCompileInputs.cache
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.dll
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
+D:\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.deps.json
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.dll
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.pdb
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.AssemblyReference.cache
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfoInputs.cache
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfo.cs
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.CoreCompileInputs.cache
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.dll
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
+C:\Users\chaun\Downloads\QL_TuyenDung\THANGHIEUKHUNG\QL_ThongTinTuyenDung_NoSQL-main\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.deps.json
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.dll
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.pdb
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.AssemblyReference.cache
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfoInputs.cache
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfo.cs
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.CoreCompileInputs.cache
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.dll
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
+C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
