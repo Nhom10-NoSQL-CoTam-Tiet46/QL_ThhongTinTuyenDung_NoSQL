@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ze1scyXqRzsMJnExPA2m/WNGrcJmBQwpROaw8/bpzdQebg5B5W9drQzryC4/alhwJLS5d/F98O7ZNU9x8fgMw==",
+  "dgSpecHash": "P9jP23P7QkJ2XpPcZ/ApyG09jS5sTXoXV2Ikls6juHYWKDV6mCoSV/LoAhW9rYIbsVVo5vB606k4CyW/2Esk8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\QL_TuyenDung\\QL_TuyenDung.csproj",
+  "projectFilePath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\QL_TuyenDung\\QL_TuyenDung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zenon\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\zenon\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

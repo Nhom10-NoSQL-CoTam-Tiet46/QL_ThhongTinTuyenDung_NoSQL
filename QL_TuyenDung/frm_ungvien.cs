@@ -17,34 +17,20 @@ namespace QL_TuyenDung
     public partial class frm_ungvien : Form
     {
         Xuly_NoSQL xuly = new Xuly_NoSQL();
-        int dachon = 0;
         string tenColection = "ungvien";
         public frm_ungvien()
         {
             InitializeComponent();
-            docdulieu(tenColection);
+            docDuLieuDatatable(tenColection);
             txt_idUV.ReadOnly = true;
             AddDataToComboBox();
         }
 
-        public void docdulieu(string colectionName)
+        public void docDuLieuDatatable(string colectionName)
         {
             DataTable dataTable;
-
-            // Gọi hàm LoadData và lưu trữ dữ liệu vào biến dataTable
-            Xuly_NoSQL xulyNoSQL = new Xuly_NoSQL();
-            dataTable = xulyNoSQL.LoadData("ungvien"); // Thay "TenCollection" bằng tên của bảng MongoDB của bạn
-
-            // Đặt DataSource của DataGridView
+            dataTable = xuly.LoadData(tenColection);
             dgv_ungvien.DataSource = dataTable;
-            //dgv_ungvien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            //dgv_ungvien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            // Đặt kích thước của DataGridView để tự động điều chỉnh kích thước cột dựa trên nội dung
-            //dgv_ungvien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-
-            // Đặt kích thước của DataGridView để tự động điều chỉnh kích thước hàng dựa trên nội dung
-
         }
 
         // Hàm để thêm dữ liệu vào ComboBox
@@ -66,6 +52,9 @@ namespace QL_TuyenDung
             cbb_kqPV_UV.Items.Add("Chưa xem");
             cbb_kqPV_UV.Items.Add("Đang xem xét");
 
+            cbb_maCV.Items.Clear();
+            xuly.loadComboBox_Tu_Colection(cbb_maCV, "congviec", "TenCV", "MaCV");
+
         }
 
         public BsonDocument TaoJSON(string trangThaiUngTuyenUV)
@@ -84,8 +73,6 @@ namespace QL_TuyenDung
             };
 
             document.Add("ThongTinLH", ThongTinLH);
-
-            // Thêm các trường mới vào document sau ThongTinLH
             document.Add("KinhNghiem", txt_kinhnghiemUV.Text);
             document.Add("HocVan", txt_hocVanUV.Text);
             document.Add("KyNang", txt_kyNangUV.Text);
@@ -93,7 +80,7 @@ namespace QL_TuyenDung
 
             BsonDocument donXinUngTuyen = new BsonDocument
             {
-                { "MaCV", txt_maCV_UV.Text },
+                { "MaCV", cbb_maCV.SelectedValue.ToString() },
                 { "NgayNopDon", BsonDateTime.Create(dtb_ngaynopdon_UV.Value) },
                 { "TrangThai", trangThaiUngTuyenUV }
             };
@@ -135,7 +122,7 @@ namespace QL_TuyenDung
                 txt_kyNangUV.Text = rowDangChon.Cells[8].Value.ToString();
                 txt_bangcapKhacUV.Text = rowDangChon.Cells[9].Value.ToString();
 
-                txt_maCV_UV.Text = rowDangChon.Cells[10].Value.ToString();
+                cbb_maCV.SelectedValue = rowDangChon.Cells[10].Value.ToString();
 
                 // Lấy ngày tháng từ cột Index 11 (dtb_ngaynopdon_UV)
                 string ngayNopDon = rowDangChon.Cells[11].Value.ToString();
@@ -186,7 +173,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đạt";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -203,7 +190,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đã phỏng vấn";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
 
             }
             catch
@@ -221,7 +208,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đang xem xét";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -238,7 +225,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Chưa xem xét";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -255,7 +242,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đã từ chối";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -271,7 +258,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đạt";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.SuaDocumentTrongCollection(tenColection, txt_idUV.Text, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -286,7 +273,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đã phỏng vấn";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.SuaDocumentTrongCollection(tenColection, txt_idUV.Text, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -301,7 +288,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đang xem xét";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.SuaDocumentTrongCollection(tenColection, txt_idUV.Text, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -316,7 +303,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Chưa xem xét";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.SuaDocumentTrongCollection(tenColection, txt_idUV.Text, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -331,7 +318,7 @@ namespace QL_TuyenDung
                 string trangThaiUngTuyenUV = "Đã từ chối";
                 BsonDocument bsonDocument = TaoJSON(trangThaiUngTuyenUV);
                 xuly.SuaDocumentTrongCollection(tenColection, txt_idUV.Text, bsonDocument);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
             }
             catch
             {
@@ -345,7 +332,7 @@ namespace QL_TuyenDung
             {
 
                 xuly.XoaDocumentTrongCollection(tenColection, txt_idUV.Text);
-                docdulieu(tenColection);
+                docDuLieuDatatable(tenColection);
                 txt_idUV.Clear();
             }
             catch
@@ -357,6 +344,35 @@ namespace QL_TuyenDung
         private void frm_ungvien_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_timkiem_TenUV_Click(object sender, EventArgs e)
+        {
+            if (txt_hoTenUV.Text == "")
+            {
+                MessageBox.Show("Hàm nhập tên ứng viên để tìm");
+                return;
+            }
+
+            dgv_ungvien.DataSource = null;
+            dgv_ungvien.DataSource = xuly.TimKiemProperty(tenColection, "HoTen", txt_hoTenUV.Text);
+        }
+
+        private void btn_timkiem_UV_DauPV_Click(object sender, EventArgs e)
+        {            
+            dgv_ungvien.DataSource = null;
+            dgv_ungvien.DataSource = xuly.TimKiemProperty(tenColection, "DonXinUngTuyen.CuocPhongVan.KetQuaPV", "Đạt");
+        }
+
+        private void btn_timgkiem_UV_Dat_Click(object sender, EventArgs e)
+        {
+            dgv_ungvien.DataSource = null;
+            dgv_ungvien.DataSource = xuly.TimKiemProperty(tenColection, "DonXinUngTuyen.TrangThai", "Đạt");
+        }
+
+        private void btn_lammoi_Click(object sender, EventArgs e)
+        {
+            docDuLieuDatatable(tenColection);
         }
     }
 }

@@ -32,44 +32,38 @@
             groupBox1 = new GroupBox();
             txt_id = new TextBox();
             label6 = new Label();
-            txtsdt = new TextBox();
+            txt_sdt = new TextBox();
             label5 = new Label();
-            txtdiachi = new TextBox();
+            txt_diachi = new TextBox();
             label4 = new Label();
-            txttencty = new TextBox();
+            txt_tencty = new TextBox();
             label3 = new Label();
-            txtmacty = new TextBox();
+            txt_macty = new TextBox();
             label2 = new Label();
-            groupBox2 = new GroupBox();
-            txtluong = new TextBox();
-            label7 = new Label();
-            txttencv = new TextBox();
-            label8 = new Label();
-            txtmacv = new TextBox();
-            label9 = new Label();
             groupBox3 = new GroupBox();
-            btthemcv = new Button();
-            btsua = new Button();
-            btxoa = new Button();
-            button1 = new Button();
+            btn_suacty = new Button();
+            btn_xoacty = new Button();
+            btn_themcty = new Button();
             groupBox4 = new GroupBox();
-            listView1 = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
+            dgv_cty = new DataGridView();
             groupBox5 = new GroupBox();
-            listView2 = new ListView();
-            columnHeader5 = new ColumnHeader();
-            columnHeader6 = new ColumnHeader();
-            columnHeader7 = new ColumnHeader();
-            btsua_cv = new Button();
+            dgv_listCV = new DataGridView();
+            groupBox2 = new GroupBox();
+            btn_xoaCV_CTY = new Button();
+            btn_suaCV_CTY = new Button();
+            btn_themCV_CTY = new Button();
+            label7 = new Label();
+            cbb_motaCV = new ComboBox();
             groupBox6 = new GroupBox();
+            btn_timkiem_TenCTY = new Button();
+            btn_lammoi = new Button();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgv_cty).BeginInit();
             groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgv_listCV).BeginInit();
+            groupBox2.SuspendLayout();
             groupBox6.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,27 +72,27 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(543, 9);
+            label1.Location = new Point(434, 9);
             label1.Name = "label1";
-            label1.Size = new Size(256, 41);
+            label1.Size = new Size(662, 41);
             label1.TabIndex = 0;
-            label1.Text = "CONG TY TUYEN";
+            label1.Text = "DANH SÁCH CÔNG TY CẦN TUYỂN NHÂN SỰ";
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(txt_id);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(txtsdt);
+            groupBox1.Controls.Add(txt_sdt);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(txtdiachi);
+            groupBox1.Controls.Add(txt_diachi);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(txttencty);
+            groupBox1.Controls.Add(txt_tencty);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(txtmacty);
+            groupBox1.Controls.Add(txt_macty);
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(12, 54);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(400, 252);
+            groupBox1.Size = new Size(400, 301);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Công ty";
@@ -119,12 +113,12 @@
             label6.TabIndex = 10;
             label6.Text = "ID :";
             // 
-            // txtsdt
+            // txt_sdt
             // 
-            txtsdt.Location = new Point(90, 208);
-            txtsdt.Name = "txtsdt";
-            txtsdt.Size = new Size(291, 27);
-            txtsdt.TabIndex = 9;
+            txt_sdt.Location = new Point(90, 208);
+            txt_sdt.Name = "txt_sdt";
+            txt_sdt.Size = new Size(291, 27);
+            txt_sdt.TabIndex = 9;
             // 
             // label5
             // 
@@ -135,12 +129,12 @@
             label5.TabIndex = 8;
             label5.Text = "SDT :";
             // 
-            // txtdiachi
+            // txt_diachi
             // 
-            txtdiachi.Location = new Point(90, 162);
-            txtdiachi.Name = "txtdiachi";
-            txtdiachi.Size = new Size(291, 27);
-            txtdiachi.TabIndex = 7;
+            txt_diachi.Location = new Point(90, 162);
+            txt_diachi.Name = "txt_diachi";
+            txt_diachi.Size = new Size(291, 27);
+            txt_diachi.TabIndex = 7;
             // 
             // label4
             // 
@@ -151,12 +145,12 @@
             label4.TabIndex = 6;
             label4.Text = "Dia chi :";
             // 
-            // txttencty
+            // txt_tencty
             // 
-            txttencty.Location = new Point(90, 115);
-            txttencty.Name = "txttencty";
-            txttencty.Size = new Size(291, 27);
-            txttencty.TabIndex = 5;
+            txt_tencty.Location = new Point(90, 115);
+            txt_tencty.Name = "txt_tencty";
+            txt_tencty.Size = new Size(291, 27);
+            txt_tencty.TabIndex = 5;
             // 
             // label3
             // 
@@ -167,12 +161,12 @@
             label3.TabIndex = 4;
             label3.Text = "Ten CTY:";
             // 
-            // txtmacty
+            // txt_macty
             // 
-            txtmacty.Location = new Point(90, 68);
-            txtmacty.Name = "txtmacty";
-            txtmacty.Size = new Size(291, 27);
-            txtmacty.TabIndex = 3;
+            txt_macty.Location = new Point(90, 68);
+            txt_macty.Name = "txt_macty";
+            txt_macty.Size = new Size(291, 27);
+            txt_macty.TabIndex = 3;
             // 
             // label2
             // 
@@ -183,124 +177,51 @@
             label2.TabIndex = 2;
             label2.Text = "Ma CTY:";
             // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(txtluong);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(txttencv);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(txtmacv);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Location = new Point(12, 312);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(400, 165);
-            groupBox2.TabIndex = 2;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Công ty";
-            // 
-            // txtluong
-            // 
-            txtluong.Location = new Point(90, 120);
-            txtluong.Name = "txtluong";
-            txtluong.Size = new Size(291, 27);
-            txtluong.TabIndex = 7;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(6, 123);
-            label7.Name = "label7";
-            label7.Size = new Size(58, 20);
-            label7.TabIndex = 6;
-            label7.Text = "Lương :";
-            // 
-            // txttencv
-            // 
-            txttencv.Location = new Point(90, 73);
-            txttencv.Name = "txttencv";
-            txttencv.Size = new Size(291, 27);
-            txttencv.TabIndex = 5;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 76);
-            label8.Name = "label8";
-            label8.Size = new Size(61, 20);
-            label8.TabIndex = 4;
-            label8.Text = "Tên CV :";
-            // 
-            // txtmacv
-            // 
-            txtmacv.Location = new Point(90, 26);
-            txtmacv.Name = "txtmacv";
-            txtmacv.Size = new Size(291, 27);
-            txtmacv.TabIndex = 3;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(6, 29);
-            label9.Name = "label9";
-            label9.Size = new Size(59, 20);
-            label9.TabIndex = 2;
-            label9.Text = "Mã CV :";
-            // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(btsua);
-            groupBox3.Controls.Add(btxoa);
-            groupBox3.Controls.Add(button1);
-            groupBox3.Location = new Point(12, 492);
+            groupBox3.Controls.Add(btn_suacty);
+            groupBox3.Controls.Add(btn_xoacty);
+            groupBox3.Controls.Add(btn_themcty);
+            groupBox3.Location = new Point(12, 375);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(400, 65);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "Chức năng công ty";
             // 
-            // btthemcv
+            // btn_suacty
             // 
-            btthemcv.Location = new Point(18, 20);
-            btthemcv.Name = "btthemcv";
-            btthemcv.Size = new Size(94, 29);
-            btthemcv.TabIndex = 7;
-            btthemcv.Text = "Thêm cv";
-            btthemcv.UseVisualStyleBackColor = true;
-            btthemcv.Click += btthemcv_Click;
+            btn_suacty.Location = new Point(245, 26);
+            btn_suacty.Name = "btn_suacty";
+            btn_suacty.Size = new Size(94, 29);
+            btn_suacty.TabIndex = 6;
+            btn_suacty.Text = "Sửa";
+            btn_suacty.UseVisualStyleBackColor = true;
+            btn_suacty.Click += btn_suacty_Click;
             // 
-            // btsua
+            // btn_xoacty
             // 
-            btsua.Location = new Point(245, 26);
-            btsua.Name = "btsua";
-            btsua.Size = new Size(94, 29);
-            btsua.TabIndex = 6;
-            btsua.Text = "Sửa";
-            btsua.UseVisualStyleBackColor = true;
-            btsua.Click += btsua_Click;
+            btn_xoacty.Location = new Point(130, 26);
+            btn_xoacty.Name = "btn_xoacty";
+            btn_xoacty.Size = new Size(94, 29);
+            btn_xoacty.TabIndex = 5;
+            btn_xoacty.Text = "Xóa";
+            btn_xoacty.UseVisualStyleBackColor = true;
+            btn_xoacty.Click += btn_xoacty_Click;
             // 
-            // btxoa
+            // btn_themcty
             // 
-            btxoa.Location = new Point(130, 26);
-            btxoa.Name = "btxoa";
-            btxoa.Size = new Size(94, 29);
-            btxoa.TabIndex = 5;
-            btxoa.Text = "Xóa";
-            btxoa.UseVisualStyleBackColor = true;
-            btxoa.Click += btxoa_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(18, 26);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 4;
-            button1.Text = "Thêm";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_themcty.Location = new Point(18, 26);
+            btn_themcty.Name = "btn_themcty";
+            btn_themcty.Size = new Size(94, 29);
+            btn_themcty.TabIndex = 4;
+            btn_themcty.Text = "Thêm";
+            btn_themcty.UseVisualStyleBackColor = true;
+            btn_themcty.Click += btn_themcty_Click;
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(listView1);
+            groupBox4.Controls.Add(dgv_cty);
             groupBox4.Location = new Point(428, 54);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(900, 252);
@@ -308,91 +229,129 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Danh sách công ty tuyển";
             // 
-            // listView1
+            // dgv_cty
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-            listView1.FullRowSelect = true;
-            listView1.Location = new Point(12, 26);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(882, 220);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
-            // 
-            // columnHeader1
-            // 
-            columnHeader1.Text = "MaCTY";
-            // 
-            // columnHeader2
-            // 
-            columnHeader2.Text = "TenCTY";
-            columnHeader2.Width = 180;
-            // 
-            // columnHeader3
-            // 
-            columnHeader3.Text = "DiaChi";
-            columnHeader3.Width = 350;
-            // 
-            // columnHeader4
-            // 
-            columnHeader4.Text = "SoDT";
-            columnHeader4.Width = 100;
+            dgv_cty.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_cty.Dock = DockStyle.Fill;
+            dgv_cty.Location = new Point(3, 23);
+            dgv_cty.Name = "dgv_cty";
+            dgv_cty.RowHeadersWidth = 51;
+            dgv_cty.RowTemplate.Height = 29;
+            dgv_cty.Size = new Size(894, 226);
+            dgv_cty.TabIndex = 0;
+            dgv_cty.CellClick += dgv_cty_CellClick;
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(listView2);
-            groupBox5.Location = new Point(434, 319);
+            groupBox5.Controls.Add(dgv_listCV);
+            groupBox5.Location = new Point(707, 360);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(896, 299);
+            groupBox5.Size = new Size(640, 217);
             groupBox5.TabIndex = 5;
             groupBox5.TabStop = false;
-            groupBox5.Text = "Danh sách các công việc của công ty";
+            groupBox5.Text = "Danh sách các công việc cần tuyển nhân sự của công ty";
             // 
-            // listView2
+            // dgv_listCV
             // 
-            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader5, columnHeader6, columnHeader7 });
-            listView2.Location = new Point(6, 26);
-            listView2.Name = "listView2";
-            listView2.Size = new Size(882, 267);
-            listView2.TabIndex = 0;
-            listView2.UseCompatibleStateImageBehavior = false;
-            listView2.View = View.Details;
-            listView2.SelectedIndexChanged += listView2_SelectedIndexChanged;
+            dgv_listCV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_listCV.Dock = DockStyle.Fill;
+            dgv_listCV.Location = new Point(3, 23);
+            dgv_listCV.Name = "dgv_listCV";
+            dgv_listCV.RowHeadersWidth = 51;
+            dgv_listCV.RowTemplate.Height = 29;
+            dgv_listCV.Size = new Size(634, 191);
+            dgv_listCV.TabIndex = 0;
             // 
-            // columnHeader5
+            // groupBox2
             // 
-            columnHeader5.Text = "MaCTY";
+            groupBox2.Controls.Add(btn_xoaCV_CTY);
+            groupBox2.Controls.Add(btn_suaCV_CTY);
+            groupBox2.Controls.Add(btn_themCV_CTY);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(cbb_motaCV);
+            groupBox2.Location = new Point(12, 471);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(400, 130);
+            groupBox2.TabIndex = 6;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Danh sách công việc";
             // 
-            // columnHeader6
+            // btn_xoaCV_CTY
             // 
-            columnHeader6.Text = "TenCV";
-            columnHeader6.Width = 150;
+            btn_xoaCV_CTY.Location = new Point(272, 75);
+            btn_xoaCV_CTY.Name = "btn_xoaCV_CTY";
+            btn_xoaCV_CTY.Size = new Size(94, 29);
+            btn_xoaCV_CTY.TabIndex = 18;
+            btn_xoaCV_CTY.Text = "Xóa CV";
+            btn_xoaCV_CTY.UseVisualStyleBackColor = true;
+            btn_xoaCV_CTY.Click += btn_xoaCV_CTY_Click;
             // 
-            // columnHeader7
+            // btn_suaCV_CTY
             // 
-            columnHeader7.Text = "Luong";
+            btn_suaCV_CTY.Location = new Point(146, 75);
+            btn_suaCV_CTY.Name = "btn_suaCV_CTY";
+            btn_suaCV_CTY.Size = new Size(94, 29);
+            btn_suaCV_CTY.TabIndex = 17;
+            btn_suaCV_CTY.Text = "Sửa CV";
+            btn_suaCV_CTY.UseVisualStyleBackColor = true;
+            btn_suaCV_CTY.Click += btn_suaCV_CTY_Click;
             // 
-            // btsua_cv
+            // btn_themCV_CTY
             // 
-            btsua_cv.Location = new Point(130, 20);
-            btsua_cv.Name = "btsua_cv";
-            btsua_cv.Size = new Size(94, 29);
-            btsua_cv.TabIndex = 8;
-            btsua_cv.Text = "Sửa CV";
-            btsua_cv.UseVisualStyleBackColor = true;
-            btsua_cv.Click += btsua_cv_Click;
+            btn_themCV_CTY.Location = new Point(21, 75);
+            btn_themCV_CTY.Name = "btn_themCV_CTY";
+            btn_themCV_CTY.Size = new Size(99, 29);
+            btn_themCV_CTY.TabIndex = 16;
+            btn_themCV_CTY.Text = "Thêm CV";
+            btn_themCV_CTY.UseVisualStyleBackColor = true;
+            btn_themCV_CTY.Click += btn_themCV_CTY_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(13, 35);
+            label7.Name = "label7";
+            label7.Size = new Size(73, 20);
+            label7.TabIndex = 15;
+            label7.Text = "Mô tả CV:";
+            // 
+            // cbb_motaCV
+            // 
+            cbb_motaCV.FormattingEnabled = true;
+            cbb_motaCV.Location = new Point(97, 32);
+            cbb_motaCV.Name = "cbb_motaCV";
+            cbb_motaCV.Size = new Size(291, 28);
+            cbb_motaCV.TabIndex = 14;
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(btthemcv);
-            groupBox6.Controls.Add(btsua_cv);
-            groupBox6.Location = new Point(12, 563);
+            groupBox6.Controls.Add(btn_timkiem_TenCTY);
+            groupBox6.Location = new Point(434, 383);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(400, 55);
-            groupBox6.TabIndex = 9;
+            groupBox6.Size = new Size(250, 105);
+            groupBox6.TabIndex = 7;
             groupBox6.TabStop = false;
-            groupBox6.Text = "Chức năng công việc";
+            groupBox6.Text = "tìm kiếm";
+            // 
+            // btn_timkiem_TenCTY
+            // 
+            btn_timkiem_TenCTY.Location = new Point(58, 35);
+            btn_timkiem_TenCTY.Name = "btn_timkiem_TenCTY";
+            btn_timkiem_TenCTY.Size = new Size(94, 29);
+            btn_timkiem_TenCTY.TabIndex = 0;
+            btn_timkiem_TenCTY.Text = "Tên công ty";
+            btn_timkiem_TenCTY.UseVisualStyleBackColor = true;
+            btn_timkiem_TenCTY.Click += btn_timkiem_TenCTY_Click;
+            // 
+            // btn_lammoi
+            // 
+            btn_lammoi.Location = new Point(434, 326);
+            btn_lammoi.Name = "btn_lammoi";
+            btn_lammoi.Size = new Size(94, 29);
+            btn_lammoi.TabIndex = 8;
+            btn_lammoi.Text = "Làm mới";
+            btn_lammoi.UseVisualStyleBackColor = true;
+            btn_lammoi.Click += btn_lammoi_Click;
             // 
             // frm_congtytuyen
             // 
@@ -400,11 +359,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1340, 649);
+            Controls.Add(btn_lammoi);
             Controls.Add(groupBox6);
+            Controls.Add(groupBox2);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label1);
             Name = "frm_congtytuyen";
@@ -412,11 +372,13 @@
             Load += frm_congtytuyen_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgv_cty).EndInit();
             groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgv_listCV).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             groupBox6.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -426,40 +388,32 @@
 
         private Label label1;
         private GroupBox groupBox1;
-        private TextBox txtsdt;
+        private TextBox txt_sdt;
         private Label label5;
-        private TextBox txtdiachi;
+        private TextBox txt_diachi;
         private Label label4;
-        private TextBox txttencty;
+        private TextBox txt_tencty;
         private Label label3;
-        private TextBox txtmacty;
+        private TextBox txt_macty;
         private Label label2;
-        private GroupBox groupBox2;
-        private TextBox txtluong;
-        private Label label7;
-        private TextBox txttencv;
-        private Label label8;
-        private TextBox txtmacv;
-        private Label label9;
         private GroupBox groupBox3;
-        private Button btsua;
-        private Button btxoa;
-        private Button button1;
+        private Button btn_suacty;
+        private Button btn_xoacty;
+        private Button btn_themcty;
         private GroupBox groupBox4;
         private TextBox txt_id;
         private Label label6;
         private GroupBox groupBox5;
-        private ListView listView1;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
-        private ListView listView2;
-        private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
-        private Button btthemcv;
-        private ColumnHeader columnHeader7;
-        private Button btsua_cv;
+        private DataGridView dgv_cty;
+        private DataGridView dgv_listCV;
+        private GroupBox groupBox2;
+        private Button btn_xoaCV_CTY;
+        private Button btn_suaCV_CTY;
+        private Button btn_themCV_CTY;
+        private Label label7;
+        private ComboBox cbb_motaCV;
         private GroupBox groupBox6;
+        private Button btn_timkiem_TenCTY;
+        private Button btn_lammoi;
     }
 }

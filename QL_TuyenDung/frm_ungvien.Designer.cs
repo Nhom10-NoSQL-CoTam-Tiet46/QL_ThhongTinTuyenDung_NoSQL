@@ -30,9 +30,9 @@
         {
             dgv_ungvien = new DataGridView();
             groupBox1 = new GroupBox();
+            cbb_maCV = new ComboBox();
             cbb_kqPV_UV = new ComboBox();
             cbb_trangthaiUV = new ComboBox();
-            txt_maCV_UV = new TextBox();
             dtb_ngayPV_UV = new DateTimePicker();
             dtb_ngaynopdon_UV = new DateTimePicker();
             txt_kinhnghiemUV = new RichTextBox();
@@ -75,28 +75,37 @@
             btn_chuaxem_sua = new Button();
             btn_dangXem_sua = new Button();
             btn_xoaUV = new Button();
+            groupBox4 = new GroupBox();
+            btn_lammoi = new Button();
+            groupBox5 = new GroupBox();
+            btn_timkiem_TenUV = new Button();
+            btn_timkiem_UV_DauPV = new Button();
+            btn_timgkiem_UV_Dat = new Button();
             ((System.ComponentModel.ISupportInitialize)dgv_ungvien).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox5.SuspendLayout();
             SuspendLayout();
             // 
             // dgv_ungvien
             // 
             dgv_ungvien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_ungvien.Location = new Point(28, 22);
+            dgv_ungvien.Dock = DockStyle.Fill;
+            dgv_ungvien.Location = new Point(3, 23);
             dgv_ungvien.Name = "dgv_ungvien";
             dgv_ungvien.RowHeadersWidth = 51;
             dgv_ungvien.RowTemplate.Height = 29;
-            dgv_ungvien.Size = new Size(800, 410);
+            dgv_ungvien.Size = new Size(832, 351);
             dgv_ungvien.TabIndex = 0;
             dgv_ungvien.CellClick += dgv_ungvien_CellClick;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(cbb_maCV);
             groupBox1.Controls.Add(cbb_kqPV_UV);
             groupBox1.Controls.Add(cbb_trangthaiUV);
-            groupBox1.Controls.Add(txt_maCV_UV);
             groupBox1.Controls.Add(dtb_ngayPV_UV);
             groupBox1.Controls.Add(dtb_ngaynopdon_UV);
             groupBox1.Controls.Add(txt_kinhnghiemUV);
@@ -133,6 +142,14 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin ứng viên";
             // 
+            // cbb_maCV
+            // 
+            cbb_maCV.FormattingEnabled = true;
+            cbb_maCV.Location = new Point(403, 429);
+            cbb_maCV.Name = "cbb_maCV";
+            cbb_maCV.Size = new Size(241, 28);
+            cbb_maCV.TabIndex = 31;
+            // 
             // cbb_kqPV_UV
             // 
             cbb_kqPV_UV.FormattingEnabled = true;
@@ -148,13 +165,6 @@
             cbb_trangthaiUV.Name = "cbb_trangthaiUV";
             cbb_trangthaiUV.Size = new Size(188, 28);
             cbb_trangthaiUV.TabIndex = 29;
-            // 
-            // txt_maCV_UV
-            // 
-            txt_maCV_UV.Location = new Point(419, 437);
-            txt_maCV_UV.Name = "txt_maCV_UV";
-            txt_maCV_UV.Size = new Size(160, 27);
-            txt_maCV_UV.TabIndex = 28;
             // 
             // dtb_ngayPV_UV
             // 
@@ -450,9 +460,9 @@
             groupBox2.Controls.Add(btn_dat_them);
             groupBox2.Controls.Add(btn_chuaxemxet_them);
             groupBox2.Controls.Add(btn_dangxemxet_them);
-            groupBox2.Location = new Point(61, 438);
+            groupBox2.Location = new Point(15, 417);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(628, 125);
+            groupBox2.Size = new Size(524, 125);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "Thêm ứng viên";
@@ -464,9 +474,9 @@
             groupBox3.Controls.Add(btn_dat_sua);
             groupBox3.Controls.Add(btn_chuaxem_sua);
             groupBox3.Controls.Add(btn_dangXem_sua);
-            groupBox3.Location = new Point(71, 598);
+            groupBox3.Location = new Point(12, 562);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(618, 125);
+            groupBox3.Size = new Size(527, 125);
             groupBox3.TabIndex = 8;
             groupBox3.TabStop = false;
             groupBox3.Text = "Sửa thông tin ứng viên";
@@ -523,7 +533,7 @@
             // 
             // btn_xoaUV
             // 
-            btn_xoaUV.Location = new Point(730, 466);
+            btn_xoaUV.Location = new Point(557, 631);
             btn_xoaUV.Name = "btn_xoaUV";
             btn_xoaUV.Size = new Size(120, 29);
             btn_xoaUV.TabIndex = 9;
@@ -531,16 +541,81 @@
             btn_xoaUV.UseVisualStyleBackColor = true;
             btn_xoaUV.Click += btn_xoaUV_Click;
             // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(dgv_ungvien);
+            groupBox4.Location = new Point(12, 12);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(838, 377);
+            groupBox4.TabIndex = 10;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Ứng viên";
+            // 
+            // btn_lammoi
+            // 
+            btn_lammoi.Location = new Point(545, 428);
+            btn_lammoi.Name = "btn_lammoi";
+            btn_lammoi.Size = new Size(94, 29);
+            btn_lammoi.TabIndex = 25;
+            btn_lammoi.Text = "Làm mới";
+            btn_lammoi.UseVisualStyleBackColor = true;
+            btn_lammoi.Click += btn_lammoi_Click;
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(btn_timgkiem_UV_Dat);
+            groupBox5.Controls.Add(btn_timkiem_UV_DauPV);
+            groupBox5.Controls.Add(btn_timkiem_TenUV);
+            groupBox5.Location = new Point(557, 484);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(323, 130);
+            groupBox5.TabIndex = 26;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Tìm kiếm";
+            // 
+            // btn_timkiem_TenUV
+            // 
+            btn_timkiem_TenUV.Location = new Point(6, 29);
+            btn_timkiem_TenUV.Name = "btn_timkiem_TenUV";
+            btn_timkiem_TenUV.Size = new Size(130, 29);
+            btn_timkiem_TenUV.TabIndex = 0;
+            btn_timkiem_TenUV.Text = "Tên ứng viên";
+            btn_timkiem_TenUV.UseVisualStyleBackColor = true;
+            btn_timkiem_TenUV.Click += btn_timkiem_TenUV_Click;
+            // 
+            // btn_timkiem_UV_DauPV
+            // 
+            btn_timkiem_UV_DauPV.Location = new Point(163, 29);
+            btn_timkiem_UV_DauPV.Name = "btn_timkiem_UV_DauPV";
+            btn_timkiem_UV_DauPV.Size = new Size(130, 29);
+            btn_timkiem_UV_DauPV.TabIndex = 1;
+            btn_timkiem_UV_DauPV.Text = "Đậu phỏng vấn";
+            btn_timkiem_UV_DauPV.UseVisualStyleBackColor = true;
+            btn_timkiem_UV_DauPV.Click += btn_timkiem_UV_DauPV_Click;
+            // 
+            // btn_timgkiem_UV_Dat
+            // 
+            btn_timgkiem_UV_Dat.Location = new Point(6, 78);
+            btn_timgkiem_UV_Dat.Name = "btn_timgkiem_UV_Dat";
+            btn_timgkiem_UV_Dat.Size = new Size(130, 29);
+            btn_timgkiem_UV_Dat.TabIndex = 2;
+            btn_timgkiem_UV_Dat.Text = "Đạt";
+            btn_timgkiem_UV_Dat.UseVisualStyleBackColor = true;
+            btn_timgkiem_UV_Dat.Click += btn_timgkiem_UV_Dat_Click;
+            // 
             // frm_ungvien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1556, 771);
+            Controls.Add(btn_lammoi);
+            Controls.Add(groupBox5);
+            Controls.Add(groupBox4);
             Controls.Add(btn_xoaUV);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Controls.Add(dgv_ungvien);
             Name = "frm_ungvien";
             Text = "frm_ungvien";
             Load += frm_ungvien_Load;
@@ -549,6 +624,8 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            groupBox5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -583,7 +660,6 @@
         private TextBox txt_thongTinKhacUV;
         private RichTextBox txt_kinhnghiemUV;
         private RichTextBox txt_kyNangUV;
-        private TextBox txt_maCV_UV;
         private DateTimePicker dtb_ngayPV_UV;
         private DateTimePicker dtb_ngaynopdon_UV;
         private ComboBox cbb_kqPV_UV;
@@ -601,5 +677,12 @@
         private Button btn_chuaxem_sua;
         private Button btn_dangXem_sua;
         private Button btn_xoaUV;
+        private GroupBox groupBox4;
+        private ComboBox cbb_maCV;
+        private Button btn_lammoi;
+        private GroupBox groupBox5;
+        private Button btn_timkiem_TenUV;
+        private Button btn_timgkiem_UV_Dat;
+        private Button btn_timkiem_UV_DauPV;
     }
 }

@@ -13,8 +13,9 @@
   "LuongCoBan": 15000000,
   "NhiemVu": [
     "Phát triển và duy trì phần mềm",
-    "Tham gia thiết kế hệ thống",
-    "Xây dựng các tính năng mới"
+    "Tham gia thiết kế hệ thống111212",
+    "Xây dựng các tính năng mới",
+    "test"
   ],
   "ThongTinLienHe": {
     "TenNguoiLienHe": "Nguyễn Văn Cừ",
@@ -27,7 +28,7 @@
     "$oid": "64ecbee91f7d5ef5b90a046e"
   },
   "MaCV": "CV002",
-  "TenCV": "Nhân viên kế toán",
+  "TenCV": "Nhân viên kế toán121212",
   "PhongBan": "Phòng tài chính",
   "MoTaCV": "Lập báo cáo thuế, kế hoạch chi tiêu, hoá đơn",
   "YeuCau": "Yêu cầu kiến thức về kế toán và kinh nghiệm tương tự",
@@ -36,9 +37,7 @@
   },
   "LuongCoBan": 12000000,
   "NhiemVu": [
-    "Quản lý sổ sách tài chính",
-    "Xử lý hóa đơn và thanh toán",
-    "Báo cáo tài chính tháng"
+    ""
   ],
   "ThongTinLienHe": {
     "TenNguoiLienHe": "Lê Thị Huyền",
@@ -86,7 +85,10 @@
   "NhiemVu": [
     "Lập kế hoạch dự án và theo dõi tiến độ",
     "Phân chia công việc cho các thành viên trong dự án",
-    "Tương tác với khách hàng và bên ngoài để báo cáo dự án"
+    "Tương tác với khách hàng và bên ngoài để báo cáo dự án",
+    {
+      "Value": "test273289"
+    }
   ],
   "ThongTinLienHe": {
     "TenNguoiLienHe": "Lê Thị Vân Anh",

@@ -28,65 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            quảnLýToolStripMenuItem = new ToolStripMenuItem();
-            nhanvienToolStripMenuItem = new ToolStripMenuItem();
-            việcCầnTuyểnToolStripMenuItem = new ToolStripMenuItem();
-            ứngViênToolStripMenuItem = new ToolStripMenuItem();
-            côngTyTuyểnDụngToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            menuStrip1.SuspendLayout();
+            btn_congtytuyen = new Button();
+            btn_ungvien = new Button();
+            btn_vieccantuyen = new Button();
+            btn_saoluuphuchoi = new Button();
+            btn_quanlytaikhoan = new Button();
             statusStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { quảnLýToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1782, 28);
-            menuStrip1.TabIndex = 1;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // quảnLýToolStripMenuItem
-            // 
-            quảnLýToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nhanvienToolStripMenuItem, việcCầnTuyểnToolStripMenuItem, ứngViênToolStripMenuItem, côngTyTuyểnDụngToolStripMenuItem });
-            quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
-            quảnLýToolStripMenuItem.Size = new Size(73, 24);
-            quảnLýToolStripMenuItem.Text = "Quản lý";
-            // 
-            // nhanvienToolStripMenuItem
-            // 
-            nhanvienToolStripMenuItem.Name = "nhanvienToolStripMenuItem";
-            nhanvienToolStripMenuItem.Size = new Size(221, 26);
-            nhanvienToolStripMenuItem.Text = "Nhân viên";
-            nhanvienToolStripMenuItem.Click += nhanvienToolStripMenuItem_Click;
-            // 
-            // việcCầnTuyểnToolStripMenuItem
-            // 
-            việcCầnTuyểnToolStripMenuItem.Name = "việcCầnTuyểnToolStripMenuItem";
-            việcCầnTuyểnToolStripMenuItem.Size = new Size(221, 26);
-            việcCầnTuyểnToolStripMenuItem.Text = "Việc cần tuyển";
-            việcCầnTuyểnToolStripMenuItem.Click += việcCầnTuyểnToolStripMenuItem_Click;
-            // 
-            // ứngViênToolStripMenuItem
-            // 
-            ứngViênToolStripMenuItem.Name = "ứngViênToolStripMenuItem";
-            ứngViênToolStripMenuItem.Size = new Size(221, 26);
-            ứngViênToolStripMenuItem.Text = "Ứng viên";
-            ứngViênToolStripMenuItem.Click += ứngViênToolStripMenuItem_Click;
-            // 
-            // côngTyTuyểnDụngToolStripMenuItem
-            // 
-            côngTyTuyểnDụngToolStripMenuItem.Name = "côngTyTuyểnDụngToolStripMenuItem";
-            côngTyTuyểnDụngToolStripMenuItem.Size = new Size(221, 26);
-            côngTyTuyểnDụngToolStripMenuItem.Text = "Công ty tuyển dụng";
-            côngTyTuyểnDụngToolStripMenuItem.Click += côngTyTuyểnDụngToolStripMenuItem_Click;
             // 
             // statusStrip1
             // 
@@ -104,51 +54,69 @@
             toolStripStatusLabel1.Size = new Size(69, 20);
             toolStripStatusLabel1.Text = "Xin chào:";
             // 
-            // button1
+            // btn_congtytuyen
             // 
-            button1.Location = new Point(73, 72);
-            button1.Name = "button1";
-            button1.Size = new Size(220, 61);
-            button1.TabIndex = 3;
-            button1.Text = "Cong Ty Tuyen";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_congtytuyen.Location = new Point(73, 72);
+            btn_congtytuyen.Name = "btn_congtytuyen";
+            btn_congtytuyen.Size = new Size(220, 61);
+            btn_congtytuyen.TabIndex = 3;
+            btn_congtytuyen.Text = "Danh sách công ty cần tuyển";
+            btn_congtytuyen.UseVisualStyleBackColor = true;
+            btn_congtytuyen.Click += button1_Click;
             // 
-            // button2
+            // btn_ungvien
             // 
-            button2.Location = new Point(352, 72);
-            button2.Name = "button2";
-            button2.Size = new Size(220, 61);
-            button2.TabIndex = 4;
-            button2.Text = "Nhan Vien";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btn_ungvien.Location = new Point(624, 72);
+            btn_ungvien.Name = "btn_ungvien";
+            btn_ungvien.Size = new Size(175, 61);
+            btn_ungvien.TabIndex = 5;
+            btn_ungvien.Text = "Ung Vien";
+            btn_ungvien.UseVisualStyleBackColor = true;
+            btn_ungvien.Click += button3_Click;
             // 
-            // button3
+            // btn_vieccantuyen
             // 
-            button3.Location = new Point(624, 72);
-            button3.Name = "button3";
-            button3.Size = new Size(175, 61);
-            button3.TabIndex = 5;
-            button3.Text = "Ung Vien";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btn_vieccantuyen.Location = new Point(348, 72);
+            btn_vieccantuyen.Name = "btn_vieccantuyen";
+            btn_vieccantuyen.Size = new Size(220, 61);
+            btn_vieccantuyen.TabIndex = 6;
+            btn_vieccantuyen.Text = "Việc cần tuyển";
+            btn_vieccantuyen.UseVisualStyleBackColor = true;
+            btn_vieccantuyen.Click += button4_Click;
+            // 
+            // btn_saoluuphuchoi
+            // 
+            btn_saoluuphuchoi.Location = new Point(348, 157);
+            btn_saoluuphuchoi.Name = "btn_saoluuphuchoi";
+            btn_saoluuphuchoi.Size = new Size(220, 61);
+            btn_saoluuphuchoi.TabIndex = 4;
+            btn_saoluuphuchoi.Text = "Sao lưu phục hồi";
+            btn_saoluuphuchoi.UseVisualStyleBackColor = true;
+            btn_saoluuphuchoi.Click += btn_saoluuphuchoi_Click;
+            // 
+            // btn_quanlytaikhoan
+            // 
+            btn_quanlytaikhoan.Location = new Point(73, 157);
+            btn_quanlytaikhoan.Name = "btn_quanlytaikhoan";
+            btn_quanlytaikhoan.Size = new Size(220, 61);
+            btn_quanlytaikhoan.TabIndex = 7;
+            btn_quanlytaikhoan.Text = "Quản lý tài khoản";
+            btn_quanlytaikhoan.UseVisualStyleBackColor = true;
+            btn_quanlytaikhoan.Click += btn_quanlytaikhoan_Click;
             // 
             // frm_main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1782, 743);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn_quanlytaikhoan);
+            Controls.Add(btn_vieccantuyen);
+            Controls.Add(btn_ungvien);
+            Controls.Add(btn_saoluuphuchoi);
+            Controls.Add(btn_congtytuyen);
             Controls.Add(statusStrip1);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
             Name = "frm_main";
             Text = "frm_main";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
             ResumeLayout(false);
@@ -156,16 +124,12 @@
         }
 
         #endregion
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem quảnLýToolStripMenuItem;
-        private ToolStripMenuItem nhanvienToolStripMenuItem;
-        private ToolStripMenuItem việcCầnTuyểnToolStripMenuItem;
-        private ToolStripMenuItem ứngViênToolStripMenuItem;
-        private ToolStripMenuItem côngTyTuyểnDụngToolStripMenuItem;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btn_congtytuyen;
+        private Button btn_ungvien;
+        private Button btn_vieccantuyen;
+        private Button btn_saoluuphuchoi;
+        private Button btn_quanlytaikhoan;
     }
 }

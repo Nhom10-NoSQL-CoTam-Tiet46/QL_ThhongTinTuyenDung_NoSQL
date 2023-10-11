@@ -4,18 +4,16 @@
   },
   "MaCTY": "CT001",
   "TenCTY": "Cong ty FPT Ho Chi Minh",
-  "DiaChi": "12 D1 , Phuong Tan Phu , Quan 9 , TPHCM",
+  "DiaChi": "12 D8 , Phuong Tan Phu , Quan 9 , TPHCM",
   "SoDT": "0837362323",
-  "MoTaCV": [
+  "ListCV": [
     {
       "MaCV": "CV001",
-      "TenCV": "Lap Trinh Java",
-      "Luong": "800$"
+      "TenCV": "Lap Trinh Java"
     },
     {
       "MaCV": "CV002",
-      "TenCV": "Lap Trinh Web",
-      "Luong": "500$"
+      "TenCV": "Lap Trinh Web"
     }
   ]
 },
@@ -27,21 +25,18 @@
   "TenCTY": "Cong ty Viettel",
   "DiaChi": "285 CMT8 , Phuong 12 , Quan 10 , TPHCM",
   "SoDT": "0986105105",
-  "MoTaCV": [
+  "ListCV": [
     {
       "MaCV": "CV001",
-      "TenCV": "Thiet Ke Do Hoa",
-      "Luong": "500$"
+      "TenCV": "Thiet Ke Do Hoa"
     },
     {
       "MaCV": "CV002",
-      "TenCV": "Bao Mat",
-      "Luong": "500$"
+      "TenCV": "Bao Mat"
     },
     {
       "MaCV": "CV003",
-      "TenCV": "Bao Ve",
-      "Luong": "1000$"
+      "TenCV": "Bao Ve"
     }
   ]
 },
@@ -53,21 +48,18 @@
   "TenCTY": "Cong ty VNG",
   "DiaChi": "06 Duong 13 , Phuong Tan Thuan , Quan 7 , TPHCM",
   "SoDT": "02839623888",
-  "MoTaCV": [
+  "ListCV": [
     {
       "MaCV": "CV001",
-      "TenCV": "Lap Trinh Java",
-      "Luong": "700$"
+      "TenCV": "Lap Trinh Java"
     },
     {
       "MaCV": "CV002",
-      "TenCV": "Lap Trinh Web",
-      "Luong": "600$"
+      "TenCV": "Lap Trinh Web"
     },
     {
       "MaCV": "CV003",
-      "TenCV": "HR",
-      "Luong": "1000$"
+      "TenCV": "HR"
     }
   ]
 },
@@ -79,21 +71,18 @@
   "TenCTY": "Cong ty TH",
   "DiaChi": "40 Nguyen Hue , Phuong 5 , Quan 1 , TPHCM",
   "SoDT": "037541255",
-  "MoTaCV": [
+  "ListCV": [
     {
       "MaCV": "CV001",
-      "TenCV": "Giu xe",
-      "Luong": "700$"
+      "TenCV": "Giu xe"
     },
     {
       "MaCV": "CV002",
-      "TenCV": "Shipper",
-      "Luong": "300$"
+      "TenCV": "Shipper"
     },
     {
       "MaCV": "CV003",
-      "TenCV": "Tiep thi",
-      "Luong": "500$"
+      "TenCV": "Tiep thi"
     }
   ]
 },
@@ -105,21 +94,18 @@
   "TenCTY": "Cong ty KMS",
   "DiaChi": "123 Cong Hoa , Phuong 12 , Quan Tan Binh , TPHCM",
   "SoDT": "02838119977",
-  "MoTaCV": [
+  "ListCV": [
     {
       "MaCV": "CV001",
-      "TenCV": "Ky Su Phan Mem",
-      "Luong": "1000$"
+      "TenCV": "Ky Su Phan Mem"
     },
     {
       "MaCV": "CV002",
-      "TenCV": "Ky Thuat Vien",
-      "Luong": "800$"
+      "TenCV": "Ky Thuat Vien"
     },
     {
       "MaCV": "CV003",
-      "TenCV": "Markerting",
-      "Luong": "500$"
+      "TenCV": "Markerting"
     }
   ]
 },
@@ -131,21 +117,18 @@
   "TenCTY": "Cong ty Along",
   "DiaChi": "125 To Hien Thanh , Phuong 15 , Quan 10 , TPHCM",
   "SoDT": "0862966481 ",
-  "MoTaCV": [
+  "ListCV": [
     {
       "MaCV": "CV001",
-      "TenCV": "Lap Trinh C",
-      "Luong": "1500$"
+      "TenCV": "Lap Trinh C"
     },
     {
       "MaCV": "CV002",
-      "TenCV": "Lap Trinh IOS",
-      "Luong": "1000$"
+      "TenCV": "Lap Trinh IOS"
     },
     {
       "MaCV": "CV003",
-      "TenCV": "Thiet ke do hoa",
-      "Luong": "900$"
+      "TenCV": "Thiet ke do hoa"
     }
   ]
 }]

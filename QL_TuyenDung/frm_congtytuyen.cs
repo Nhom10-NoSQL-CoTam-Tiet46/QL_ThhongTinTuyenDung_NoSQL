@@ -19,289 +19,274 @@ namespace QL_TuyenDung
     public partial class frm_congtytuyen : Form
     {
         Xuly_NoSQL xuly = new Xuly_NoSQL();
-        int dachon = 0;
         string tenColection = "congty";
+        string tenThuocTinh = "ListCV";
         BsonArray dsCV = new BsonArray();
-        BsonArray dsCTY = new BsonArray();
-        private object txt_emailUV;
 
         public frm_congtytuyen()
         {
             InitializeComponent();
-            //docdulieu(tenColection);
-            hienthi();
             txt_id.ReadOnly = true;
-        }
-
-
-        // ham them
-
-        public void themmotacv()
-        {
-            var connectionString = "mongodb://localhost:27017/admin";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var db = server.GetDatabase("QL_Tuyendung");
-            var collection = db.GetCollection<BsonDocument>("congty");
-            BsonDocument cv1 = new BsonDocument();
-            //dong moi
-            cv1.Add("MaCV", txtmacv.Text);
-            cv1.Add("TenCV", txttencv.Text);
-            cv1.Add("Luong", txtluong.Text);
-            dsCV.Add(cv1);
-            foreach (BsonDocument document in collection.FindAll())
-            {
-                if (document.GetElement("MaCTY").Value.ToString() == txtmacty.Text)
-                {
-                    document.GetElement("TenCTY").Value.ToString();
-                    document["MoTaCV"] = dsCV;
-                    collection.Save(document);
-                    MessageBox.Show("Them cv thành công");
-                    break;
-                }
-            }
-
-            hienthi();
-        }
-        public BsonDocument TaoJSON()
-        {
-            BsonDocument document = new BsonDocument
-            {
-                { "MaCTY", txtmacty.Text },
-                { "TenCTY", txttencty.Text },
-                { "DiaChi",(txtdiachi.Text) },
-                { "SoDT", (txtsdt.Text) },
-            };
-            BsonArray Dg = new BsonArray();
-            document.Add("MoTaCV", Dg);
-            return document;
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var connectionString = "mongodb://localhost:27017/admin";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var db = server.GetDatabase("QL_Tuyendung");
-            var collection = db.GetCollection<BsonDocument>("congty");
-
-
-            BsonDocument document = new BsonDocument();
-            document.Add("MaCTY", txtmacty.Text);
-            document.Add("TenCTY", txttencty.Text);
-            document.Add("DiaChi", txtdiachi.Text);
-
-            document.Add("SoDT", txtsdt.Text);
-
-
-            BsonArray Dg = new BsonArray();
-            document.Add("MoTaCV", Dg);
-            //document.Add("MaCV", txtmacv.Text);
-            //document.Add("TenCV", txttencv.Text);
-            //document.Add("Luong", txtluong.Text);
-            //Dg.Add(document);
-            collection.Insert(document);
-            foreach (BsonDocument document1 in collection.FindAll())
-            {
-                {
-                    document["MoTaCV"] = Dg;
-                    collection.Save(document1);
-                }
-            }
-            //themmotacv();
-            MessageBox.Show("Thêm thành công");
-            hienthi();
+            docDuLieuDatatable(tenColection);
+            xuly.loadComboBox_Tu_Colection(cbb_motaCV, "congviec", "TenCV", "MaCV");
 
         }
 
-        void hienthi()
-        {
-            var connectionString = "mongodb://localhost:27017/admin";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var db = server.GetDatabase("QL_Tuyendung");
-            var collection = db.GetCollection<BsonDocument>("congty");
-            listView1.Items.Clear();
-            foreach (BsonDocument document in collection.FindAll())
-            {
-                ListViewItem lvi = listView1.Items.Add(document.GetElement("MaCTY").Value.ToString());
-                lvi.SubItems.Add(document.GetElement("TenCTY").Value.ToString());
-                lvi.SubItems.Add(document.GetElement("DiaChi").Value.ToString());
-                lvi.SubItems.Add(document.GetElement("SoDT").Value.ToString());
-
-            }
-        }
         private void frm_congtytuyen_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btxoa_Click(object sender, EventArgs e)
+        public void docDuLieuDatatable(string colectionName)
         {
-            string id = "";
-            var connectionString = "mongodb://localhost:27017/admin";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var db = server.GetDatabase("QL_Tuyendung");
-            var collection = db.GetCollection<BsonDocument>("congty");
-            foreach (BsonDocument document in collection.FindAll())
-            {
-                //MessageBox.Show("" + document.GetElement("_id").Value.ToString());
-                if (document.GetElement("MaCTY").Value.ToString() == txtmacty.Text)
-                {
-                    id = document.GetElement("_id").Value.ToString();
-                    xuly.XoaDocumentTrongCollection(tenColection, id);
-                    break;
-                }
+            DataTable dataTable;
+            dataTable = xuly.LoadData(colectionName);
+            dgv_cty.DataSource = dataTable;
+            dgv_cty.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            }
-            hienthi();
         }
 
-        private void btsua_Click(object sender, EventArgs e)
+        public BsonDocument TaoJSON(string chucnang)
         {
-            string id = "";
-            var connectionString = "mongodb://localhost:27017/admin";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var db = server.GetDatabase("QL_Tuyendung");
-            var collection = db.GetCollection<BsonDocument>("congty");
-            foreach (BsonDocument document in collection.FindAll())
+            BsonDocument document = new BsonDocument
             {
-                //MessageBox.Show("" + document.GetElement("_id").Value.ToString());
-                if (document.GetElement("MaCTY").Value.ToString() == txtmacty.Text)
+                { "_id", new BsonObjectId(ObjectId.GenerateNewId()) }, // Tạo một ObjectID ngẫu nhiên cho _id
+                { "MaCTY", txt_macty.Text },
+                { "TenCTY", txt_tencty.Text },
+                { "DiaChi", txt_diachi.Text },
+                { "SoDT", txt_sdt.Text },
+                { "ListCV", new BsonArray() }
+            };
+
+            if (chucnang == "sua")
+            {
+                foreach (DataGridViewRow row in dgv_listCV.Rows)
                 {
-                    id = document.GetElement("_id").Value.ToString();
-
-                    break;
+                    // Kiểm tra xem dòng có dữ liệu hợp lệ không (không trống)
+                    if (row.Cells[0].Value != null && row.Cells[1].Value != null)
+                    {
+                        string maCV = row.Cells[0].Value.ToString();
+                        string tenCV = row.Cells[1].Value.ToString();
+                        BsonDocument cv = new BsonDocument
+                        {
+                            { "MaCV", maCV },
+                            { "TenCV", tenCV }
+                        };
+                        document["ListCV"].AsBsonArray.Add(cv);
+                    }
                 }
-
             }
+            else
+            {
+                BsonDocument cv = new BsonDocument
+                {
+                    { "MaCV", cbb_motaCV.SelectedValue.ToString() },
+                    { "TenCV", cbb_motaCV.Text }
+                };
+                document["ListCV"].AsBsonArray.Add(cv);
+            }
+
+
+
+            return document;
+        }
+
+
+        private void btn_themcty_Click(object sender, EventArgs e)
+        {
             try
             {
+                BsonDocument bsonDocument = TaoJSON("them");
+                xuly.ThemDocumentVaoCollection(tenColection, bsonDocument);
+                docDuLieuDatatable(tenColection);
+                MessageBox.Show("Thêm thông tin công ty thành công");
 
-                BsonDocument bsonDocument = TaoJSON();
-                xuly.SuaDocumentTrongCollection(tenColection, id, bsonDocument);
-                hienthi();
             }
             catch
             {
-                MessageBox.Show("Bạn chưa nhập đủ thông tin ứng viên");
+                MessageBox.Show("Lỗi thêm");
+            }
+        }
+
+        private void btn_xoacty_Click(object sender, EventArgs e)
+        {
+            if (txt_id.Text == "")
+            {
+                MessageBox.Show("Hãy chọn thông tin công ty muốn xóa");
+                return;
             }
 
-            BsonDocument capnhat = new BsonDocument();
-            capnhat.Add("MaCV", txtmacv.Text);
-            capnhat.Add("TenCV", txttencv.Text);
-            capnhat.Add("Luong", txtluong.Text);
-            foreach (BsonDocument document in collection.FindAll())
+            try
             {
-                if (document.GetElement("MaCTY").Value.ToString() == txtmacty.Text)
-                {
-                    foreach (BsonDocument sp in dsCV)
-                    {
-                        if (sp.GetElement("MaCV").Value.ToString() == txtmacv.Text)
-                        {
+                xuly.XoaDocumentTrongCollection(tenColection, txt_id.Text);
+                docDuLieuDatatable(tenColection);
+                MessageBox.Show("Xóa công ty thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi xóa");
+            }
+        }
 
-                            dsCV.Remove(sp);
-                            dsCV.Add(capnhat);
-                            document["MoTaCV"] = dsCV;
-                            collection.Save(document);
-                            break;
-                        }
-                    }
+        private void btn_suacty_Click(object sender, EventArgs e)
+        {
+            if (txt_id.Text == "")
+            {
+                MessageBox.Show("Hãy chọn thông tin công ty muốn sửa");
+                return;
+            }
+            try
+            {
+                BsonDocument bsonDocument = TaoJSON("sua");
+                xuly.SuaDocumentTrongCollection(tenColection, txt_id.Text, bsonDocument);
+                docDuLieuDatatable(tenColection);
+                MessageBox.Show("Sửa thông tin công ty thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi sửa");
+            }
+        }
+
+        private void dgv_cty_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow rowDangChon = dgv_cty.Rows[e.RowIndex];
+                txt_id.Text = rowDangChon.Cells[0].Value.ToString();
+                txt_macty.Text = rowDangChon.Cells[1].Value.ToString();
+                txt_tencty.Text = rowDangChon.Cells[2].Value.ToString();
+                txt_diachi.Text = rowDangChon.Cells[3].Value.ToString();
+                txt_sdt.Text = rowDangChon.Cells[4].Value.ToString();
+            }
+            docDuLieuDatable_MangArray(tenColection, tenThuocTinh)
+;
+        }
+
+        public void docDuLieuDatable_MangArray(string colectionName, string propertyName)
+        {
+            try
+            {
+                DataTable dataTable;
+                dataTable = xuly.loadDataTable_PropertyArray(colectionName, propertyName, txt_id.Text);
+                dgv_listCV.DataSource = dataTable;
+                dgv_listCV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception ex)
+            {
+                dgv_listCV.DataSource = null;
+                dgv_listCV.Columns.Clear();
+            }
+        }
+
+        private void btn_themCV_CTY_Click(object sender, EventArgs e)
+        {
+            if (txt_id.Text != "")
+            {
+                try
+                {
+                    BsonDocument newValue = new BsonDocument
+                    {
+                        { "MaCV", cbb_motaCV.SelectedValue.ToString() },
+                        { "TenCV", cbb_motaCV.Text }
+                    };
+
+                    xuly.ThemElementVaoPropertyArray(tenColection, tenThuocTinh, txt_id.Text,
+                        newValue);
+
+                    MessageBox.Show("Thêm công việc thành công!");
+
+                    docDuLieuDatable_MangArray(tenColection, tenThuocTinh);
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý ngoại lệ nếu có lỗi khi xóa
+                    MessageBox.Show($"Lỗi: {ex.Message}");
                 }
             }
-            hienthi();
+            else
+            {
+                // Hiển thị thông báo cho người dùng nếu không có dòng nào được chọn trong dgv_nhiemVu
+                MessageBox.Show("Hãy chọn công việc cần tuyển cần thêm.");
+            }
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_suaCV_CTY_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
+            if (txt_id.Text != "")
             {
-
-                var connectionString = "mongodb://localhost:27017/admin";
-                var client = new MongoClient(connectionString);
-                var server = client.GetServer();
-                var db = server.GetDatabase("QL_Tuyendung");
-                var collection = db.GetCollection<BsonDocument>("congty");
-                dsCV.Clear();
-                foreach (BsonDocument document in collection.FindAll())
+                try
                 {
-                    if (document.GetElement("MaCTY").Value.ToString() == listView1.SelectedItems[0].SubItems[0].Text)
+                    int index = dgv_listCV.CurrentRow.Index;
+
+                    BsonDocument newValue = new BsonDocument
                     {
-                        txtmacty.Text = document.GetElement("MaCTY").Value.ToString();
-                        txttencty.Text = document.GetElement("TenCTY").Value.ToString();
-                        txtdiachi.Text = document.GetElement("DiaChi").Value.ToString();
-                        txtsdt.Text = document.GetElement("SoDT").Value.ToString();
-                        listView2.Items.Clear();
-                        foreach (BsonDocument cv in document["MoTaCV"].AsBsonArray)
-                        {
-                            ListViewItem lvi = listView2.Items.Add(cv.GetElement("MaCV").Value.ToString());
-                            lvi.SubItems.Add(cv.GetElement("TenCV").Value.ToString());
-                            lvi.SubItems.Add(cv.GetElement("Luong").Value.ToString());
+                        { "MaCV", cbb_motaCV.SelectedValue.ToString() },
+                        { "TenCV", cbb_motaCV.Text }
+                    };
 
-                            dsCV.Add(cv);
+                    xuly.SuaElementTuPropertyArray(tenColection, tenThuocTinh, txt_id.Text, index,
+                        newValue);
 
-                        }
-                    }
+                    MessageBox.Show("Thêm công việc thành công!");
+
+                    docDuLieuDatable_MangArray(tenColection, tenThuocTinh);
                 }
-                hienthi();
-            }
-
-
-        }
-
-        private void btthemcv_Click(object sender, EventArgs e)
-        {
-            themmotacv();
-        }
-
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listView2.SelectedItems.Count > 0)
-            {
-                txtmacv.Text = listView2.SelectedItems[0].SubItems[0].Text;
-                txttencv.Text = listView2.SelectedItems[0].SubItems[1].Text;
-                txtluong.Text = listView2.SelectedItems[0].SubItems[2].Text;
-            }
-
-
-
-
-            // hienthi();
-        }
-
-        private void btsua_cv_Click(object sender, EventArgs e)
-        {
-            var connectionString = "mongodb://localhost:27017/admin";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var db = server.GetDatabase("QL_Tuyendung");
-            var collection = db.GetCollection<BsonDocument>("congty");
-            BsonDocument capnhat = new BsonDocument();
-            capnhat.Add("MaCV", txtmacv.Text);
-            capnhat.Add("TenCV", txttencv.Text);
-            capnhat.Add("Luong", txtluong.Text);
-            foreach (BsonDocument document in collection.FindAll())
-            {
-                if (document.GetElement("MaCTY").Value.ToString() == txtmacty.Text)
+                catch (Exception ex)
                 {
-                    foreach (BsonDocument sp in dsCV)
-                    {
-
-                        if (sp.GetElement("MaCV").Value.ToString() == txtmacv.Text)
-                        {
-
-                            dsCV.Remove(sp);
-                            dsCV.Add(capnhat);
-                            document["MoTaCV"] = dsCV;
-                            collection.Save(document);
-                            break;
-                        }
-                    }
+                    // Xử lý ngoại lệ nếu có lỗi khi xóa
+                    MessageBox.Show($"Lỗi: {ex.Message}");
                 }
             }
-            //collection.Save(document);
-            hienthi();
+            else
+            {
+                // Hiển thị thông báo cho người dùng nếu không có dòng nào được chọn trong dgv_nhiemVu
+                MessageBox.Show("Hãy điền tên nhiệm vụ cần thêm.");
+            }
+        }
+
+        private void btn_xoaCV_CTY_Click(object sender, EventArgs e)
+        {
+            if (txt_id.Text != "")
+            {
+                int index = dgv_listCV.CurrentRow.Index;
+
+                try
+                {
+                    xuly.xoaElement_tu_PropertyArray(tenColection, tenThuocTinh, txt_id.Text, index);
+
+                    MessageBox.Show("Xóa thành công!");
+
+                    docDuLieuDatable_MangArray(tenColection, tenThuocTinh);
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý ngoại lệ nếu có lỗi khi xóa
+                    MessageBox.Show($"Lỗi: {ex.Message}");
+                }
+            }
+            else
+            {
+                // Hiển thị thông báo cho người dùng nếu không có dòng nào được chọn trong dgv_nhiemVu
+                MessageBox.Show("Chọn một dòng để xóa.");
+            }
+        }
+
+        private void btn_timkiem_TenCTY_Click(object sender, EventArgs e)
+        {
+            if (txt_tencty.Text == "")
+            {
+                MessageBox.Show("Hàm nhập tên công ty để tìm");
+                return;
+            }
+
+            dgv_cty.DataSource = null;
+            dgv_cty.DataSource = xuly.TimKiemProperty(tenColection, "TenCTY", txt_tencty.Text);
+        }
+
+        private void btn_lammoi_Click(object sender, EventArgs e)
+        {
+            docDuLieuDatatable(tenColection);
         }
     }
 }

@@ -58,3 +58,15 @@ C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Lib
 C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
 C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
 C:\Users\zenon\Downloads\Compressed\QL_ThongTinTuyenDung_NoSQL-main\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.deps.json
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.dll
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\bin\Debug\net6.0-windows\WinForms_Library.pdb
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.AssemblyReference.cache
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfoInputs.cache
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.AssemblyInfo.cs
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.csproj.CoreCompileInputs.cache
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.dll
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\refint\WinForms_Library.dll
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\WinForms_Library.pdb
+D:\Github\QL_ThongTinTuyenDung_NoSQL\WinForms_Library\obj\Debug\net6.0-windows\ref\WinForms_Library.dll

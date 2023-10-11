@@ -12,88 +12,26 @@ namespace QL_TuyenDung
 {
     public partial class frm_main : Form
     {
+        public string TaiKhoanQly { get; private set; }
+        public string PhanQuyen { get; private set; }
+
         public frm_main()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen; // Đặt vị trí bắt đầu ở giữa màn hình
+            kiemtra_phanQuyen(PhanQuyen);
 
         }
 
-        public frm_main(string name)
+        public frm_main(string name, string quyen)
         {
+            this.TaiKhoanQly = name;
+            this.PhanQuyen = quyen;
             InitializeComponent();
             toolStripStatusLabel1.Text = "Xin chào: " + name;
             this.StartPosition = FormStartPosition.CenterScreen; // Đặt vị trí bắt đầu ở giữa màn hình
 
-
-        }
-
-        private void ứngViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_ungvien frm = new frm_ungvien();
-
-            // Lấy kích thước của frm_cha
-            int chaWidth = this.Width;
-            int chaHeight = this.Height;
-
-            // Đặt kích thước của frm_con bằng kích thước của frm_cha
-            frm.Size = new Size(chaWidth, chaHeight);
-
-            // Đặt vị trí của frm_con ở giữa của frm_cha
-            frm.StartPosition = FormStartPosition.CenterParent;
-
-            frm.Show();
-        }
-
-        private void nhanvienToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_nhanvienn1 frm = new frm_nhanvienn1();
-
-            // Lấy kích thước của frm_cha
-            int chaWidth = this.Width;
-            int chaHeight = this.Height;
-
-            // Đặt kích thước của frm_con bằng kích thước của frm_cha
-            frm.Size = new Size(chaWidth, chaHeight);
-
-            // Đặt vị trí của frm_con ở giữa của frm_cha
-            frm.StartPosition = FormStartPosition.CenterParent;
-
-            frm.Show();
-        }
-
-        private void việcCầnTuyểnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_vieccantuyen frm = new frm_vieccantuyen();
-
-            // Lấy kích thước của frm_cha
-            int chaWidth = this.Width;
-            int chaHeight = this.Height;
-
-            // Đặt kích thước của frm_con bằng kích thước của frm_cha
-            frm.Size = new Size(chaWidth, chaHeight);
-
-            // Đặt vị trí của frm_con ở giữa của frm_cha
-            frm.StartPosition = FormStartPosition.CenterParent;
-
-            frm.Show();
-        }
-
-        private void côngTyTuyểnDụngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_congtytuyen frm = new frm_congtytuyen();
-
-            // Lấy kích thước của frm_cha
-            int chaWidth = this.Width;
-            int chaHeight = this.Height;
-
-            // Đặt kích thước của frm_con bằng kích thước của frm_cha
-            frm.Size = new Size(chaWidth, chaHeight);
-
-            // Đặt vị trí của frm_con ở giữa của frm_cha
-            frm.StartPosition = FormStartPosition.CenterParent;
-
-            frm.Show();
+            kiemtra_phanQuyen(PhanQuyen);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,15 +40,36 @@ namespace QL_TuyenDung
             frm.ShowDialog(this);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void kiemtra_phanQuyen(string quyen)
         {
-            frm_nhanvienn1 frm = new frm_nhanvienn1();
-            frm.ShowDialog(this);
+            if (PhanQuyen == "User")
+            {
+                btn_saoluuphuchoi.Enabled = false;
+                btn_quanlytaikhoan.Enabled = false;
+            }         
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-           frm_ungvien frm = new frm_ungvien();
+            frm_ungvien frm = new frm_ungvien();
+            frm.ShowDialog(this);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frm_vieccantuyen frm = new frm_vieccantuyen();
+            frm.ShowDialog(this);
+        }
+
+        private void btn_saoluuphuchoi_Click(object sender, EventArgs e)
+        {
+            frm_saoluu_phuchoi frm = new frm_saoluu_phuchoi();
+            frm.ShowDialog(this);
+        }
+
+        private void btn_quanlytaikhoan_Click(object sender, EventArgs e)
+        {
+            frm_taikhoan frm = new frm_taikhoan();
             frm.ShowDialog(this);
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\QL_TuyenDung\\QL_TuyenDung.csproj": {}
+    "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\QL_TuyenDung\\QL_TuyenDung.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\QL_TuyenDung\\QL_TuyenDung.csproj": {
+    "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\QL_TuyenDung\\QL_TuyenDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\QL_TuyenDung\\QL_TuyenDung.csproj",
+        "projectUniqueName": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\QL_TuyenDung\\QL_TuyenDung.csproj",
         "projectName": "QL_TuyenDung",
-        "projectPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\QL_TuyenDung\\QL_TuyenDung.csproj",
+        "projectPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\QL_TuyenDung\\QL_TuyenDung.csproj",
         "packagesPath": "C:\\Users\\zenon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\QL_TuyenDung\\obj\\",
+        "outputPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\QL_TuyenDung\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zenon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj": {
-                "projectPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj"
+              "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj": {
+                "projectPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj": {
+    "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj",
+        "projectUniqueName": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
         "projectName": "WinForms_Library",
-        "projectPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\WinForms_Library.csproj",
+        "projectPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
         "packagesPath": "C:\\Users\\zenon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zenon\\Downloads\\Compressed\\QL_ThongTinTuyenDung_NoSQL-main\\WinForms_Library\\obj\\",
+        "outputPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zenon\\AppData\\Roaming\\NuGet\\NuGet.Config",

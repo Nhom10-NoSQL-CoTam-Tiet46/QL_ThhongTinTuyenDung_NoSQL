@@ -3,19 +3,22 @@
     "$oid": "64eb5c5c30db95cd493cbc33"
   },
   "TaiKhoanQly": "admin1",
-  "MatKhauQly": "123456"
+  "MatKhauQly": "123456",
+  "PhanQuyen": "Admin"
 },
 {
   "_id": {
     "$oid": "64eb5c5c30db95cd493cbc34"
   },
   "TaiKhoanQly": "admin2",
-  "MatKhauQly": "123123"
+  "MatKhauQly": "123123",
+  "PhanQuyen": "Admin"
 },
 {
   "_id": {
     "$oid": "64eb5c5c30db95cd493cbc35"
   },
-  "TaiKhoanQly": "admin3",
-  "MatKhauQly": "sa123"
+  "TaiKhoanQly": "u001",
+  "MatKhauQly": "001",
+  "PhanQuyen": "User"
 }]

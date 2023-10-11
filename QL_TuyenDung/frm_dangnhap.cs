@@ -37,9 +37,9 @@ namespace QL_TuyenDung
                 MessageBox.Show("Hãy nhập đầy đủ thông tin");
                 return;
             }
-
+            Xuly_NoSQL thongTinDangNhap = xuly.kiemTraDN(tk, mk);
             // Kiểm tra đăng nhập
-            if (xuly.kiemTraDN(tk, mk) == null)
+            if (thongTinDangNhap == null)
             {
                 MessageBox.Show("Đăng nhập thất bại");
                 return;
@@ -47,7 +47,7 @@ namespace QL_TuyenDung
 
             // Nếu đăng nhập thành công, tắt form hiện hành và mở form frm_main
             this.Hide();
-            frm_main mainForm = new frm_main(tk);
+            frm_main mainForm = new frm_main(thongTinDangNhap.TaiKhoanQly, thongTinDangNhap.PhanQuyen);
             mainForm.Show(); // Mở form frm_main
         }
     }
