@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\zenon\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\zenon\\.nuget\\packages"
+      "C:\\Users\\SONDAY\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SONDAY\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

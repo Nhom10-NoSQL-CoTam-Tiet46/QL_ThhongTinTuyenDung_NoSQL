@@ -824,19 +824,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zenon\\.nuget\\packages\\": {}
+    "C:\\Users\\SONDAY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
+      "projectUniqueName": "D:\\Apps\\github\\data\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
       "projectName": "WinForms_Library",
-      "projectPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
-      "packagesPath": "C:\\Users\\zenon\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\obj\\",
+      "projectPath": "D:\\Apps\\github\\data\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\WinForms_Library.csproj",
+      "packagesPath": "C:\\Users\\SONDAY\\.nuget\\packages\\",
+      "outputPath": "D:\\Apps\\github\\data\\QL_ThongTinTuyenDung_NoSQL\\WinForms_Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zenon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SONDAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

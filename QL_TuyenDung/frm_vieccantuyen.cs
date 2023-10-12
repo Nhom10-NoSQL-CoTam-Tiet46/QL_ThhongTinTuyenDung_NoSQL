@@ -310,6 +310,17 @@ namespace QL_TuyenDung
 
         private void btn_lammoi_Click(object sender, EventArgs e)
         {
+            txt_idCV.Text = "";
+            txt_macv.Text = "";
+            txt_tencv.Text = "";
+            txt_email.Text = "";
+            txt_luong.Text = "";
+            txt_mota.Text = "";
+            txt_nhiemvu.Text = "";
+            txt_phongban.Text = "";
+            txt_soDT.Text = "";
+            txt_tennguoiLH.Text = "";
+            txt_yeucau.Text = "";
             docDuLieuDatatable(tenColection);
         }
     }

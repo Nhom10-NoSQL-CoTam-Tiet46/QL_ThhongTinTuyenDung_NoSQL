@@ -372,6 +372,7 @@ namespace QL_TuyenDung
 
         private void btn_lammoi_Click(object sender, EventArgs e)
         {
+
             docDuLieuDatatable(tenColection);
         }
     }
